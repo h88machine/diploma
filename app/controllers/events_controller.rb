@@ -6,7 +6,7 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.create(params[:event])
-    @place = 10.times{@event.places.create(params[:event])}
+    @place = 10.times{@event.places.create(:price => "13", :number => "2")}
     if @event.save
       flash[:success] = "Event created"
       redirect_to root_path

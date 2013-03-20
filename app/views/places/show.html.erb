@@ -3,10 +3,8 @@
 		Place number<span class="label label-success"> <%= @place.number%> </span> <br>
 		place Price<span class="label label-success"> <%= @place.price %> $</span><br>
 		event name <span class="label label-success"><%= @event.name %> </span><br>
-		event id<span class="label label-success"> <%= @event.id %> </span><br>
-		place id<span class="label label-success"> <%= @place.id %> </span><br>
 		
-	<%= link_to "dfgjdg", new_place_order_path(@place) %>
+	<%= link_to "Make Order", new_place_order_path(@place) %>
 	
 	</div>
 
