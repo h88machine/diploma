@@ -4,6 +4,7 @@ gem 'rails', '3.2.9'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'simple_calendar', '~> 0.1.6'
+gem "mysql2"
 
 
 
@@ -11,7 +12,6 @@ gem 'simple_calendar', '~> 0.1.6'
 group :development do
 
 gem "annotate", "~> 2.5.0"
-gem "mysql2"
 
 
 end
