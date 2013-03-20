@@ -1,0 +1,16 @@
+<div class="row">
+	<div class="span5">
+		
+		<%= form_for([@place, @order]) do |f| %>
+			<%= render 'shared/error_messages', object: f.object %>
+			
+				<%= f.label "Place number" %>
+				<%= f.text_field :place_number, :value => @place.number %>
+				
+				<%= f.label "Price" %>
+				<%= f.text_field :price, :value => @place.price %>			
+						
+			<%= f.submit "Make order", class: "btn btn-large btn-primary" %>
+		<% end %>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<h1>Events#show</h1>
+<p>Find me in app/views/events/show.html.erb</p>
+	<%= @event.name %>
+	<% @event.places.each do |place|%>
+		<% if place.status == 0 %>
+		<li><%= link_to place.number, event_place_path(@event, place) %></li>
+		<% else %>
+		<li><%= link_to place.number%></li>
+		<% end%>
+	<% end %>

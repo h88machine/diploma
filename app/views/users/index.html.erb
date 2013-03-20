@@ -1,0 +1,12 @@
+<h1>User List</h1>
+<div class="row">
+	<div class="span6 offset3">
+		<% @user.each do |user| %>
+		<li>
+			<%= link_to user.name, user %> || <%= user.email %>
+		</li>
+		<% if current_user.admin? %> <%= link_to "delete", user, method: :delete, confirm: "SURE?"%> <% end %>
+		<% end %>
+
+	</div>
+</div>
